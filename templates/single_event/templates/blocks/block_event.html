@@ -1,0 +1,42 @@
+{% macro block_event(event, registered) %}
+<div class="post-content">
+    <div class="visible-post">
+        <h1 class="h-style">
+            <p>{{ event.title }} </p>
+        </h1>
+        <div class="event-data">
+            <img class="event-img" src="/static/{{ event.thumbnail }}">
+            <div class="event-dates">
+                <p><strong>Początek: </strong>{{ event.start_date.strftime('%Y-%m-%d') }} </p>
+                <p><strong>Koniec: </strong>{{ event.end_date.strftime('%Y-%m-%d') }} </p>
+            </div>
+
+        </div>
+        <div class="event-registered">
+            <h5>Registered users: {{ registered | length}}</h5>
+            <form class="post-form" method="post" action={{ url_for('add_registration') }}>
+                <div class="event-form">
+                    <input type="text" name="fullname" id="fullname" placeholder="Your full name" class="form-control" required><br>
+                    <input type="hidden" name="event_id" id="event_id" class="form-control" required value="{{ event.id }}"><br>
+                    <button type="submit" class="form-btn"> Register for event </button>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="event-manage">
+            <h5>Cancel your reservation </h5>
+            <form class="post-form" method="post" action={{ url_for('delete_registration') }}>
+                <div class="event-form">
+                    <input type="text" name="code" id="fullname" placeholder="Your manage reservation code" class="form-control" required><br>
+                    <input type="hidden" name="event_id" id="event_id" class="form-control" required value="{{ event.id }}"><br>
+                    <button type="submit" class="form-btn"> Cancel reservation </button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endmacro %}

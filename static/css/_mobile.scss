@@ -1,0 +1,140 @@
+@media screen and (max-width: 880px) {
+  .hamburger-item {
+    display: flex!important;
+  }
+  .home-section {
+    display: block!important;
+  }
+  .visible-post .meta {
+    display: block!important;
+  }
+  .home-posts {
+    width: 100%!important;
+  }
+  .page-sidebar {
+    width: 100%!important;
+    padding-left: 0!important;
+  }
+  .sidebar {
+    padding: 0!important;
+    margin-top: 50px!important;
+    width: 100%!important;
+    position: static!important;
+  }
+  .post-actions {
+    margin-top: 20px!important;
+    display: flex!important;
+    justify-content: flex-end!important;
+  }
+  .comment {
+    width: 100%!important;
+  }
+  .comments-hr {
+    display: none!important;
+  }
+  .small-jumb {
+    width: 100%!important;
+    margin-top: 200px!important;
+  }
+  .small-jumb h1 {
+    font-size: 30px!important;
+  }
+  .small-jumb p {
+    font-size: $mainfontsize!important;
+  }
+  .explore-btn {
+    display: none!important;
+  }
+  .logo-menu-item {
+    width: 50%!important;
+  }
+  .other-menu-items {
+    flex-direction: column-reverse!important;
+    width: 100%!important;
+  }
+  .other-menu-items li {
+    width: 100%!important;
+  }
+  .label-link {
+    flex-direction: row!important;
+  }
+  .label-p {
+    font-size: $mainfontsize!important;
+    margin-left: 15px!important;
+    margin-top: 0!important;
+  }
+  .jumbotron {
+    height: 50%!important;
+    background-image: url("../images/spina.jpg")!important;
+    background-attachment: fixed!important;
+    background-position: center!important;
+    background-size: cover!important;
+  }
+  .form-group {
+    width: 80%!important;
+  }
+  .viewing-photos {
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .view_media {
+    width: 80%!important;
+  }
+  .nav-hidden {
+    display: none;
+  }
+  .post-form, .post-content {
+    margin-bottom: 50px!important;
+  }
+  .comments-form {
+    flex-direction: column!important;
+  }
+  .visible-post-comments-content {
+    padding: 0!important;
+  }
+  .login-block {
+    width: 100%!important;
+    padding: 0 40px!important;
+    border: 0!important;
+  }
+  textarea, input {
+    width: 100%!important;
+  }
+  .form-group {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .form-meta {
+    flex-direction: column;
+  }
+  .form-btn {
+    width: 40%;
+    margin-top: 20px!important;
+  }
+  .comments-form .form-btn {
+    width: 80%!important;
+  }
+  .post-form {
+    .form-group {
+      width: 100%!important;
+    }
+  }
+  .post-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-group-tags {
+    justify-content: space-between!important;
+    margin-left: 3px!important;
+  }
+  .comment-content, .comment-author {
+    margin-right: 0!important;
+  }
+  .sort-options {
+    justify-content: space-between!important;
+  }
+}
+

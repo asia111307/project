@@ -1,0 +1,215 @@
+body {
+  font-family: $mainfont;
+  margin: 0;
+  background: $background-color;
+  position: relative;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+iframe, img {
+  max-width: 90%;
+}
+a:link, a:visited, a:active, a:hover, a:focus {
+  text-decoration: none;
+}
+a {
+    color: $maincolor;
+}
+p {
+  margin: 0;
+}
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.label-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.label-p {
+  font-size: $labelfontsize;
+  line-height: normal;
+  margin-top: 5px;
+}
+.p-style {
+  font-size: $mainfontsize;
+  color: $textcolor;
+  text-align: justify;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+}
+.h-style {
+  text-align: center;
+  font-size: $headerfontsize;
+  font-weight: bold;
+  margin: 60px 0;
+}
+.smaller-h {
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.author {
+  color: $maincolor;
+  font-weight: bold;
+}
+.credentials {
+  font-size: $smallfontsize;
+}
+.section-style {
+  padding: 50px 0;
+  height: 100%;
+}
+.section-style.noContent {
+  height: 100vh;
+}
+.login-register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.no-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.icon-btn {
+  height: 25px;
+  width: 25px;
+  border: 0;
+  color: $background-color;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: $mainfontsize;
+  line-height:$mainfontsize;
+  transition: 0.3s;
+}
+.form-btn {
+  margin-top: 30px;
+  transition: 0.8s;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0;
+  color: $background-color;
+  background-color: $maincolor;
+  background-position: 100% 0;
+  background-size: 300%;
+  background-image: linear-gradient(45deg, #FAF5F0 50%, transparent 50%);
+  &:hover {
+    color: $maincolor;
+    background-position: 0 100%;
+    box-shadow: 5px 5px 30px 0 $maincolor;
+  }
+}
+.form-meta {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  label {
+    margin-bottom: 0;
+  }
+  input, textarea {
+    width: 200px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: $border;
+    transition: 0.5s;
+    &:focus {
+      border-bottom: 2px solid $maincolor;
+    }
+  }
+  textarea {
+    width: 350px;
+  }
+  .title-input {
+    width: 100%;
+  }
+}
+.title-form-group {
+  width: calc(100% - 200px);
+}
+
+.meta {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .post-actions {
+    display: inline-flex;
+    a {
+      margin: 0 5px;
+    }
+    .meta-btn {
+      font-size: $smallfontsize;
+    }
+  }
+}
+.feedback {
+  color: $maincolor;
+}
+.icon-small {
+  font-size: $smallfontsize;
+}
+.icon-big {
+  font-size: $bigiconsize;
+}
+.post-content-form {
+  margin-right: 0;
+  width: 100%!important;
+  margin-top: 20px;
+}
+.select {
+  border: none;
+  padding: 10px;
+  background-color: $background-color;
+  margin-left: 15px;
+}
+.form-group-tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+i {
+  padding-right: 5px;
+
+}
+.profile-img {
+  min-width: 200px;
+  min-height: 200px;
+}
+.profile-img-nav {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: $border;
+}
+.mark-green {
+  color: green;
+}
+.mark-red {
+  color: darkred;
+}
+.users-table {
+  width: 100%;
+}
+
+a[name="image-a"].defaultCursor {
+  cursor: default;
+}
